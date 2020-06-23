@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normalPadding">20dp</dimen>
+
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="card_elevation">.1dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="card_margin">14dp</dimen>
+
+    <dimen name="card_strok_widtth">.8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="padding_top">12dp</dimen>
+    <dimen name="normal_padding">16dp</dimen>
+
+    <dimen name="card_game_dim">150dp</dimen>
+    <dimen name="text_basic">16sp</dimen>
+
+
+
+    <dimen name="card_maincourse_elevation">2dp</dimen>
+    <dimen name="card_image_elevation">4dp</dimen>
+    <dimen name="card_itemcourse_elevation">2dp</dimen>
+    <dimen name="card_item_tutorial_elevation">5dp</dimen>
+
+    <dimen name="headerTextSize">21sp</dimen>
+    <dimen name="headerMoreTextSize">13sp</dimen>
+    <dimen name="frutorial_title">15sp</dimen>
+
+</resources>
