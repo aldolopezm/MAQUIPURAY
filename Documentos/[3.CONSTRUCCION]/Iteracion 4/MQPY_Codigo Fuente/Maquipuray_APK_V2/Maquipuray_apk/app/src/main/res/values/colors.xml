@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">@color/g_end_color</color>-->
+
+    <color name="color_principal">#FF4301</color>
+    <color name="color_pr_texto">#5b5b5b</color>
+
+    <color name="colorPrimary">@color/color_principal</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">@color/gray</color>
+
+
+    <color name="fav_icon_tint">#CAC7C7</color>
+    <color name="lightGrey">#E7E7E7</color>
+
+
+    <!--<color name="colorRipple">#1F000000</color>-->
+    <color name="colorRipple">#1f000000</color>
+
+    <color name="white">#fff</color>
+
+
+    <!--    Moon Gradient-->
+    <!--    https://uigradients.com/-->
+    <color name="g_start_color">#0F2027</color>
+    <color name="g_center_color">#203A43</color>
+    <color name="g_end_color">#2C5364</color>
+    <color name="grayshape">#f6f7fb</color>
+    <color name="light_medium_gray">#f3f3f3</color>
+    <color name="grayvar">#f3f3f3</color>
+
+    <color name="gray">#A7A5A5</color>
+    <color name="gray_title_dark">#7E7D7D</color>
+
+    <!--colors for light mode-->
+    <color name="contentBodyColor">#FCFCFC</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="bottomNavigationBackground">#F7F7F7</color>
+
+    <color name="colorblacktransparent">#90000000</color>
+    <color name="color_details">#333333</color>
+    <color name="detail_tex">#9E9E9E</color>
+    <color name="detail_text_value">#FF9800</color>
+    <color name="color_select_favorite">#EF6C00</color>
+
+
+    <color name="primaryTextColor">#019AE8</color>
+    <color name="frutorial_title">#4c4c4c</color>
+    <color name="card_promociones">#FF402D</color>
+
+</resources>
