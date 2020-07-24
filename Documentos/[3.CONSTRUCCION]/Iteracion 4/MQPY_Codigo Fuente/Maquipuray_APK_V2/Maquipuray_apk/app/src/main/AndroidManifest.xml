@@ -15,13 +15,13 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".pedidos.Pedido"
+            android:name=".ui.pedidos.Pedido"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_pedido"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".main.CompraOnline" />
+        <activity android:name=".ui.main.CompraOnline" />
         <activity
-            android:name=".main.SplashScreen"
+            android:name=".ui.main.SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".main.LoginActivity"
+            android:name=".ui.main.LoginActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
@@ -45,7 +45,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".main.MainActivity"
+            android:name=".ui.main.MainActivity"
             android:screenOrientation="portrait">
 
             <!-- <intent-filter> -->

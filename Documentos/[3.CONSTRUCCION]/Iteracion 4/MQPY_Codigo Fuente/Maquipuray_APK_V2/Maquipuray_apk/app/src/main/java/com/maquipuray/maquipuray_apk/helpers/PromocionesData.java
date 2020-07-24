@@ -1,7 +1,7 @@
 package com.maquipuray.maquipuray_apk.helpers;
 
 import com.maquipuray.maquipuray_apk.R;
-import com.maquipuray.maquipuray_apk.remote.model.PromocionResponse;
+import com.maquipuray.maquipuray_apk.data.remote.model.PromocionResponse;
 
 import java.util.ArrayList;
 import java.util.List;

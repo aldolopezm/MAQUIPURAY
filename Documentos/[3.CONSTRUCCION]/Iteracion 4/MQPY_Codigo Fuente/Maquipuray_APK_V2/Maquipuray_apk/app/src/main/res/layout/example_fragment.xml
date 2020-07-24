@@ -11,7 +11,7 @@
 
     android:background="@color/white"
     android:padding="@dimen/normalPadding"
-    tools:context=".destacados.DestacadosFragment">
+    tools:context=".ui.destacados.DestacadosFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.core.widget.NestedScrollView

@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Maquipuray_apk_transporte</string>
+    <string name="app_name">Maquipuray Transporte</string>
+
+
+    <string name="login_contrasenia">Contraseña</string>
+    <string name="login_usuario">Correo</string>
+    <string name="ingresarLogin">Ingresar</string>
+    <string name="back_pressed_message">Atras</string>
+    <string name="random_text">Lorem ipsum dolor sit amet, consectetu</string>
+    <string name="no_connectivity">No hay conexion a Internet</string>
+    <string name="title_activity_pedido">Pedido</string>
+    <string name="app_name_icon">Maquipuray Transporte</string>
+
 </resources>

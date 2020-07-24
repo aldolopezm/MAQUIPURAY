@@ -10,7 +10,7 @@
 
     android:background="@color/white"
 
-    tools:context=".busquedas.BusquedasFragment">
+    tools:context=".ui.categorias.BusquedasFragment">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

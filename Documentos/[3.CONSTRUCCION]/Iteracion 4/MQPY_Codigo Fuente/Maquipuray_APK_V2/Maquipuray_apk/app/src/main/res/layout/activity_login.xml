@@ -10,7 +10,7 @@
     android:background="@color/colorPrimaryDark"
     android:paddingLeft="@dimen/padding_top"
     android:paddingRight="@dimen/padding_top"
-    tools:context=".main.LoginActivity">
+    tools:context=".ui.main.LoginActivity">
 
     <ScrollView
 
