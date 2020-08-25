@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--android:padding="@dimen/normalPadding"-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+
+    tools:context=".ui.menucategorias.BusquedasFragment">
+
+        <androidx.core.widget.NestedScrollView
+
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_back_pressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normalPadding"
+                    android:layout_marginRight="@dimen/normalPadding"
+
+                    android:paddingTop="@dimen/padding_top"
+
+                    android:paddingBottom="@dimen/padding_top"
+                    android:visibility="gone">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/card_margin"
+                        android:src="@drawable/ic_keyboard_backspace" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/card_corner_radius"
+
+                        android:gravity="center"
+                        android:text="@string/back_pressed_message"
+                        android:textColor="@color/gray_title_dark"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/rv_lista"
+
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_width="wrap_content"
+
+
+                    android:layout_height="wrap_content"
+
+
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+
+                    app:spanCount="2"
+                    tools:itemCount="6"
+                    tools:listitem="@layout/card_categoria">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_circular"
+            android:layout_gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+</FrameLayout>

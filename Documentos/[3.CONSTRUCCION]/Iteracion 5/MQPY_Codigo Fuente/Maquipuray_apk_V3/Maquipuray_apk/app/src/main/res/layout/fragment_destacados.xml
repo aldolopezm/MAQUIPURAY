@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.menudestacados.DestacadosFragment">
+
+<!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--    tools:showIn="@layout/app_bar_main"-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        style="@style/parent.contentLayout"
+
+
+        android:paddingLeft="@dimen/normal_padding"
+        android:paddingRight="@dimen/normal_padding"
+
+        >
+
+        <androidx.core.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Destacados"
+                    style="@style/viewParent.headerText" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_destacado_2"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardBackgroundColor="@android:color/transparent"
+
+                        app:cardElevation="0dp"
+                        android:minHeight="200dp"
+                        android:layout_alignParentTop="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pizzería \nDon Guaton"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="17sp"/>
+
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_marginTop="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="60% Complete"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="13sp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+
+                        android:layout_width="150dp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:src="@drawable/mover_truck"
+
+                        android:contentDescription="@string/app_name_icon" />
+                </RelativeLayout>
+
+                <!--            <RelativeLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginBottom="10dp">-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/refer_earn_button"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:layout_marginLeft="60dp"-->
+                <!--                    android:layout_alignParentBottom="true">-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:textSize="13sp"-->
+                <!--                        android:textAlignment="center"-->
+                <!--                        android:textColor="@color/white"-->
+                <!--                        android:paddingTop="5dp"-->
+                <!--                        android:paddingBottom="5dp"-->
+                <!--                        android:text="Refer your friends and\n earn free course *"/>-->
+
+                <!--                </LinearLayout>-->
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="80dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:adjustViewBounds="true"-->
+                <!--                    android:cropToPadding="true"-->
+                <!--                    android:src="@drawable/refer_icon" />-->
+
+                <!--            </RelativeLayout>-->
+
+
+
+                <!--            <RelativeLayout-->
+                <!--                android:visibility="gone"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_margin="10dp">-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_alignParentTop="true"-->
+                <!--                    android:layout_alignParentLeft="true"-->
+                <!--                    android:text="Popular Courses"-->
+                <!--                    style="@style/viewParent.headerText"/>-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_alignParentRight="true"-->
+                <!--                    style="@style/viewParent"-->
+                <!--                    android:text="See All"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:textSize="@dimen/headerMoreTextSize"-->
+                <!--                    android:textColor="@color/primaryTextColor"-->
+                <!--                    android:textStyle="bold"/>-->
+
+                <!--            </RelativeLayout>-->
+
+                <!--            &lt;!&ndash;remove the below layout with recycler view, use card poplar courses as model for design&ndash;&gt;-->
+
+                <!--            <HorizontalScrollView-->
+                <!--                android:visibility="gone"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:scrollbars="none"-->
+                <!--                >-->
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                >-->
+
+                <!--                <include layout="@layout/card_popular_courses"/>-->
+                <!--                <include layout="@layout/card_popular_courses"/>-->
+                <!--                <include layout="@layout/card_popular_courses"/>-->
+
+                <!--            </LinearLayout>-->
+                <!--            </HorizontalScrollView>-->
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Pizza Familiar Mixta"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="14sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Descuento:"
+                                />
+                            <TextView
+                                android:textSize="14sp"
+                                android:layout_marginStart="@dimen/padding_top"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold"
+                                android:text="10%"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="13sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:text="Cel 966 810 534"
+                                />
+
+<!--                            <RatingBar-->
+
+<!--                                style="@style/Widget.AppCompat.RatingBar.Small"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center"-->
+
+<!--                                android:layout_marginStart="@dimen/padding_top"-->
+<!--                                android:numStars="5"-->
+<!--                                android:rating="3"-->
+<!--                                android:theme="@style/RatingBar"-->
+<!--                                >-->
+
+<!--                            </RatingBar>-->
+
+                            <TextView
+                                android:layout_marginStart="@dimen/nav_header_vertical_spacing"
+                                android:textSize="14sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:layout_gravity="bottom"
+
+
+
+                                android:text="200"
+                                android:textStyle="bold"
+                                android:drawableStart="@drawable/ic_like"
+                                />
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_marginStart="@dimen/nav_header_vertical_spacing"
+                                android:src="@drawable/ic_like"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Nombre del Negocio"
+                            />
+                        <RatingBar
+                            android:visibility="gone"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </RatingBar>
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_protocolo"
+                        android:drawableTop="@drawable/ic_pdf"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Protocolo \nde Seguridad"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/headerMoreTextSize"
+                        android:textColor="@color/primaryTextColor"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="Promociones Destacadas"
+                        style="@style/viewParent.headerText"
+
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"
+                        style="@style/viewParent"
+                        android:text="Ver Todos"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/headerMoreTextSize"
+                        android:textColor="@color/primaryTextColor"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <!--remove the below layout with recycler view, use card poplar courses as model for design-->
+
+
+<!--                <HorizontalScrollView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:scrollbars="none"-->
+<!--                    >-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_marginTop="10dp">-->
+
+<!--                        <include layout="@layout/item_promocion_destacado"/>-->
+
+<!--                        <include layout="@layout/item_promocion_destacado"/>-->
+<!--                        <include layout="@layout/item_promocion_destacado"/>-->
+
+<!--                    </LinearLayout>-->
+<!--                </HorizontalScrollView>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/rv_lista_promociones_destacadas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+
+
+                    android:orientation="horizontal"
+
+
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+                    tools:itemCount="3"
+
+                    tools:listitem="@layout/item_promocion_destacado"
+
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</FrameLayout>

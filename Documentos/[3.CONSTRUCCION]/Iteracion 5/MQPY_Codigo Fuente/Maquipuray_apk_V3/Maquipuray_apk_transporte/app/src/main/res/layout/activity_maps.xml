@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.mapa.MapsActivity">
+
+
+    <androidx.fragment.app.FragmentContainerView
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/card_corner_radius"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/card_corner_radius"
+        android:layout_marginBottom="@dimen/card_corner_radius"
+
+        android:clickable="true"
+        android:focusable="true"
+
+
+        app:cardBackgroundColor="@color/colordetails"
+        app:cardCornerRadius="5dp"
+        app:cardElevation=".2dp">
+
+        <TextView
+            android:id="@+id/tv_pedidos_details"
+            style="@style/viewParent.headerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:padding="@dimen/card_corner_radius"
+            android:text="Pedido #100 \nZona 3"
+            android:textColor="@color/colorAccent" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/card_corner_radius"
+        android:layout_marginEnd="@dimen/padding_frame"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            app:cardBackgroundColor="@color/colorblacktransparent"
+            app:cardCornerRadius="5dp"
+
+            app:cardElevation=".2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_location_1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="@dimen/card_corner_radius"
+                    android:text="lat long 1: "
+                    android:textColor="@color/fav_icon_tint"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_location_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/card_corner_radius"
+                    android:text="lat long 2: "
+
+
+                    android:textColor="@color/fav_icon_tint"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_aceptar_pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Aceptar Pedido"
+
+            />
+
+        <Button
+            android:id="@+id/btn_cancelar_pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+
+
+            android:text="Finalizar Carrera" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/navigationSearch"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Categorias" />
+
+    <item
+        android:id="@+id/navigationHome"
+
+        android:icon="@drawable/ic_home"
+        android:title="Destacados" />
+
+    <item
+        android:id="@+id/navigationMisPedidos"
+        android:icon="@drawable/ic_product"
+        android:title="Mis Pedidos" />
+
+    <item
+        android:id="@+id/navigationMyProfile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Cuenta" />
+
+</menu>

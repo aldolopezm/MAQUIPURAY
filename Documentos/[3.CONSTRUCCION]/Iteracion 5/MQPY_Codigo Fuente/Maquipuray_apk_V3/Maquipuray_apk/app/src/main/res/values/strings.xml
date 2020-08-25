@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Apk_MAQUIPURAY</string>
+    <string name="app_name_icon">MAQUIPURAY</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="login_contrasenia">Contraseña</string>
+    <string name="login_usuario">Correo</string>
+    <string name="ingresarLogin">Ingresar</string>
+    <string name="back_pressed_message">Atras</string>
+    <string name="random_text">Lorem ipsum dolor sit amet, consectetu</string>
+    <string name="no_connectivity">No hay conexion a Internet</string>
+    <string name="title_activity_pedido">Pedido</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="msg_registrado">Registrado</string>
+    <string name="msg_registrado_check">Check</string>
+    <string name="title_activity_pedido_seguimiento">Map</string>
+    <string name="chooser_title">eliga una opcion</string>
+    <string name="title_activity_register">Registro</string>
+
+</resources>

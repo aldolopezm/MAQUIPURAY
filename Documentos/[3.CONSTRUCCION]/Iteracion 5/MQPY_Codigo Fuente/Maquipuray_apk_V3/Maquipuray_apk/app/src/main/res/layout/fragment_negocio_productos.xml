@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.negocio.NegocioProductosFragment"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+
+            android:id="@+id/constraint_negocio"
+            style="@style/parent.contentLayout"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+
+            android:paddingLeft="@dimen/normal_padding"
+            android:paddingRight="@dimen/normal_padding"
+            android:paddingBottom="@dimen/normal_padding">
+
+            <TextView
+                android:id="@+id/tv_title_categoria"
+                style="@style/viewParent.headerText"
+                android:layout_marginTop="16dp"
+                android:text="Categoria"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/linearProm"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:visibility="gone"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_categoria"
+                app:layout_constraintWidth_percent="0.7">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+
+                    android:scaleType="centerCrop"
+
+                    android:src="@drawable/img_destacado_2" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:orientation="vertical"
+
+                android:visibility="gone"
+
+                android:weightSum="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_categoria"
+                app:layout_constraintWidth_percent="0.3">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:padding="@dimen/negocio_item"
+                    android:src="@drawable/ic_like" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:padding="@dimen/negocio_item"
+
+
+                    android:src="@drawable/ic_pdf" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Nombre del Negocio:"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearProm" />
+
+
+            <TextView
+                android:id="@+id/tv_negocio_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+
+                android:text="200"
+
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/linearProm" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_like"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tv_negocio_like"
+                app:layout_constraintTop_toBottomOf="@+id/linearProm" />
+
+            <TextView
+                android:id="@+id/tv_negocio_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Breve Descripcion Negocio"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+            <!--        <ScrollView-->
+            <!--            android:id="@+id/scrollview"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="8dp"-->
+            <!--            android:scrollbars="none"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/tv_title_producto">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_producto">
+
+                <!--                <include layout="@layout/item_negocio_promocionproducto" />-->
+
+                <!--                <include layout="@layout/item_negocio_promocionproducto" />-->
+
+                <!--                <include layout="@layout/item_negocio_promocionproducto" />-->
+
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/rv_lista_promociones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+
+
+                    android:orientation="vertical"
+
+
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+                    tools:itemCount="3"
+
+                    tools:listitem="@layout/item_promocion_producto"
+
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--        </ScrollView>-->
+
+            <TextView
+                android:id="@+id/tv_title_producto"
+                style="@style/StyleTextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Productos "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_negocio_descripcion" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        />
+
+</FrameLayout>

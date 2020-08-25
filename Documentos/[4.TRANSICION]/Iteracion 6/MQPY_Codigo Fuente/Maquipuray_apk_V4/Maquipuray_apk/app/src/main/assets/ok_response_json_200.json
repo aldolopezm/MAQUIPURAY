@@ -1,0 +1,59 @@
+{
+  "data": [
+    {
+      "idCategoria": 1,
+      "slug": "minimarkets",
+      "nombre": "Minimarkets",
+      "descripcion": "Minimarkets",
+      "imagen": "0kRd28L5QH43Q1Dj5K2Sv6F1wOgUhzOSHhjL.png",
+      "fechaRegistro": "2020-06-29 17:26:56",
+      "estado": 1
+    },
+    {
+      "idCategoria": 2,
+      "slug": "comidas",
+      "nombre": "Comidas",
+      "descripcion": "Comidas",
+      "imagen": "btn_comidas.png",
+      "fechaRegistro": "2020-06-29 17:26:56",
+      "estado": 1
+    },
+    {
+      "idCategoria": 3,
+      "slug": "belleza",
+      "nombre": "Belleza",
+      "descripcion": "Belleza",
+      "imagen": "btn_belleza.png",
+      "fechaRegistro": "2020-06-29 17:26:56",
+      "estado": 1
+    },
+    {
+      "idCategoria": 4,
+      "slug": "ferreterias",
+      "nombre": "Ferreterias",
+      "descripcion": "Ferreterias",
+      "imagen": "btn_Ferreteria.png",
+      "fechaRegistro": "2020-06-29 17:26:56",
+      "estado": 1
+    },
+    {
+      "idCategoria": 5,
+      "slug": "librerias",
+      "nombre": "Librerias",
+      "descripcion": "Librerias",
+      "imagen": "btn_librerias.png",
+      "fechaRegistro": "2020-06-29 17:26:56",
+      "estado": 1
+    },
+    {
+      "idCategoria": 6,
+      "slug": "otros",
+      "nombre": "Otros",
+      "descripcion": "Otros",
+      "imagen": "btn_otros.png",
+      "fechaRegistro": "2020-06-29 17:26:56",
+      "estado": 1
+    }
+  ],
+  "mensaje": ""
+}

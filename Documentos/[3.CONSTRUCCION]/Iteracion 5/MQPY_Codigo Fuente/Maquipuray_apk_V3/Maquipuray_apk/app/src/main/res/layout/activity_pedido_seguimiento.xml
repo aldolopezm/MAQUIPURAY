@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.medioentrega.PedidoSeguimientoActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.medioentrega.PedidoSeguimientoActivity" />
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_elegir_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+
+        app:cardBackgroundColor="@color/color_transparent_card"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+
+            <TextView
+                android:id="@+id/tv_conductor"
+                style="@style/viewParent.headerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_regular"
+                android:text="Seguimiento de mi Pedido"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!--            android:background="?attr/selectableItemBackground"-->
+            <TextView
+                android:id="@+id/tv_pedido_asignado"
+                android:layout_marginTop="@dimen/normalPadding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:drawablePadding="10dp"
+
+                android:gravity="center_vertical"
+
+                android:text="Situacion"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_conductor_datos"
+                android:layout_marginTop="@dimen/normalPadding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:drawablePadding="10dp"
+
+                android:gravity="center_vertical"
+
+                android:text="Conductor: "
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_confirmar_ubicacion"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_check_black_24dp"
+
+        app:backgroundTint="@color/colorAccent" />
+</RelativeLayout>
